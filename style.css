@@ -1,0 +1,33 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+.hero-gradient {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("photo-1438232992991-995b7058bbb3.jpeg");
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 
+              0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.section-title {
+  position: relative;
+  display: inline-block;
+}
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 9px;
+}
